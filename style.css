@@ -104,6 +104,7 @@ h1.porfolio {
 footer.fin {
     margin-top: 588px;
     font-variant: small-caps;
+    background: fixed;
 }
 
 footer.fin2 {
@@ -474,6 +475,6 @@ h3.arthur2 {
 }
 
 p.pacc {
-    text-align: center;
-    margin-top: 150px;
+   margin: auto;
+   width: 50%;
 }
