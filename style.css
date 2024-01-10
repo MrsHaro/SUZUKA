@@ -1,0 +1,479 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* l'acceuil */
+body.modif1 {
+    background-color: rgb(248, 221, 179);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+section.bdp {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 130px;
+    margin-left: -30px;
+}
+
+section.bdp a {
+    padding: 30px;
+    font-size: x-large;
+    color: black;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+section.bdp a:hover {
+    padding: 10px;
+    font-size: x-large;
+    color: rgb(196, 0, 0);
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+footer.enbas {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* le porfolio */
+body.modif2 {
+    background-color: rgb(248, 221, 179);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+p.porfolio {
+    text-align: center;
+}
+
+h1.porfolio {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 55px;
+}
+
+.lienporfolio {
+    text-align: center;
+    padding: auto;
+}
+
+
+
+.lienporfolio a {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    font-size: xx-large;
+    margin-right: 80px;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: rgb(196, 0, 0);
+    text-transform: uppercase;
+}
+
+.lienporfolio a:hover {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    font-size: xx-large;
+    margin-right: 80px;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer.fin {
+    margin-top: 588px;
+    font-variant: small-caps;
+}
+
+footer.fin2 {
+    margin-top: 125px;
+    font-variant: small-caps;
+}
+
+/* le contact */
+
+body.modif4 {
+    background-color: rgb(248, 221, 179);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+div.lienac::before {
+    content: "";
+    position: absolute;
+    background: rgb(196, 0, 0);
+    width: 13.2%;
+    height: 3px;
+    bottom: 93%;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    left: 1.8%;
+}
+
+div.lienac:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+div.lienac a {
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+}
+
+div.lienac a:hover {
+    /* text-decoration: underline; */
+    color: rgb(196, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+
+.containe {
+    margin: 0px;
+    padding: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+form {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 235, 203);
+}
+
+form h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+div.ligne {
+    width: 100ù;
+    height: 1px;
+    background-color: rgb(196, 0, 0);
+}
+
+.formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.formulaire .blok {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .formulaire .gauche .blok input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid rgb(0, 0, 0);
+    outline-color: rgb(196, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(248, 221, 179);
+    ;
+}
+
+form .formulaire .gauche .blok i {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: rgb(196, 0, 0);
+}
+
+form .formulaire .droite {
+    margin-left: 40px;
+}
+
+form .formulaire .droite .blok {
+    height: 100%;
+}
+
+form .formulaire .droite .blok textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(248, 221, 179);
+    border: 1px solid black;
+    outline-color: rgb(196, 0, 0);
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+
+form .btnfin button {
+    margin-top: 10px;
+    background-color: rgb(196, 0, 0);
+    color: rgb(248, 221, 179);
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+form .btnfin button:hover {
+    transform: scale(1.05);
+}
+
+.fin3 {
+    margin-top: 570px;
+}
+
+@media screen and (max-width: 920px) {
+    form .formulaire .droite {
+        margin-left: 0px;
+    }
+}
+
+
+/* le porfolio d'ARTHUR */
+body.modif5 {
+    background-color: rgb(248, 221, 179);
+    animation: fadeIn 0.5s ease-in-out;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+div.lienac1::before {
+    content: "";
+    position: absolute;
+    background: rgb(196, 0, 0);
+    width: 13.2%;
+    height: 3px;
+    bottom: 93%;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    left: 3%;
+}
+
+div.lienac1:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+div.lienac1 a {
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+}
+
+div.lienac1 a:hover {
+    /* text-decoration: underline; */
+    color: rgb(196, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+
+/* header.arthur a::before,
+header.arthur a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #000000;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    transition: all 0.2s ease-in-out;
+}
+
+header.arthur a::before {
+    width: 90%;
+    bottom: 0;
+}
+
+header.arthur a::after {
+    width: 60%;
+    bottom: -7px;
+}
+
+header.arthur a::before,
+header.arthur a::after {
+    opacity: 1;
+    transform: translate(-50%, 0px);
+}
+
+header.arthur a::before,
+header.arthur a:hover::after {
+    transition-delay: 0.1;
+}
+
+header.arthur a:hover::before {
+    transition-delay: 0s;
+} */
+
+header.arthur a {
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+}
+
+header.arthur a:hover {
+    color: rgb(196, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section.arthur {
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+p.arthur {
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+#arthur {
+    color: rgb(196, 0, 0);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+p.arthur button {
+    background-color: rgb(248, 221, 179);
+    border-radius: 8px;
+    border: 1.8px solid rgb(248, 221, 179);
+    position: relative;
+    padding-left: 530px;
+}
+
+p.arthur a {
+    text-decoration: none;
+    color: rgb(196, 0, 0);
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    padding-left: 530px;
+}
+
+p.arthur button:hover {
+    background-color: rgb(196, 0, 0);
+    border-radius: 5px;
+    border: 1.8px solid rgb(196, 0, 0);
+    position: relative;
+
+}
+
+p.arthur a:hover {
+    text-decoration: none;
+    color: rgb(248, 221, 179);
+    font-size: medium;
+    position: relative;
+    padding-left: 530px;
+}
+
+footer.arthur {
+    padding-left: 535px;
+}
+
+footer.arthur a {
+    text-align: center;
+    color: rgb(196, 0, 0);
+    text-decoration: none;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+}
+
+footer.arthur a:hover {
+    text-align: center;
+    color: rgb(196, 0, 0);
+    text-decoration: none;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #000000;
+    margin: 20px 0;
+}
+
+
+/* les comp d'Arthur */
+body.modif7 {
+    background-color: rgb(248, 221, 179);
+    animation: fadeIn 0.5s ease-in-out;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.compdroite {
+    position: fixed;
+    top: 5px;
+    right: 25px;
+}
+
+div.arthur2 {
+    background-color: rgb(255, 235, 203);
+    border-radius: 10px;
+    position: absolute;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+section.arthur2 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contenu {
+    padding: 10px;
+}
+
+.contenu p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 25px;
+}
+
+h3.arthur2 {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+p.pacc {
+    text-align: center;
+    margin-top: 150px;
+}

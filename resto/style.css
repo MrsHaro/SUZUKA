@@ -1,0 +1,134 @@
+article.ligne
+{
+    line-height: 200%;
+	font-size: large;
+	width: auto;
+	text-align: center;
+}
+header.tete {text-align: left; padding: 0px; display: flex;;}
+
+.tt { display: flex; border-bottom: 1% solid white; flex-direction: row; }
+
+div.aligne {text-align: center; margin: auto;}
+
+div.menu {margin-bottom: 20%; text-align: center; font-size: large; font-weight: bolder; height: 80px;}
+
+h1.aligne {text-align: center;font-weight: bolder;}
+
+h2.aligne {text-align: center;font-weight: bolder;}
+
+span.fin {font-variant: small-caps;}
+
+button.aligne {text-align: center;}
+
+p.aligne {text-align: center;}
+
+table.aligne {text-align: center;}
+
+.fin { margin-bottom: 5px;}
+
+
+
+a{
+    position: relative;
+    padding: 10px 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 20px;
+
+
+
+}
+a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(150, 14, 14);
+    z-index: -1;
+    transition: transform 0.5s;
+transform-origin: bottom right;
+transform: scale(0);
+
+
+}
+a:hover:before
+{
+    transition: transform 0.5s;
+    transform-origin: top left;
+transform: scale(1);
+
+
+}
+a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    box-sizing: border-box;
+    
+    z-index: -1;
+    transition: transform 0.5s;
+transform-origin: top left;
+transform: scale(1);
+
+
+
+}
+a:hover:after{
+transition: transform 0.5s;
+transform-origin: bottom right;
+transform: scale(0);
+
+
+}
+body#modif1
+{
+	background: rgba(0, 0, 0, 0.5) url(resto5.jpg);
+    height: 100%;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+	font-size: x-large;
+	line-height: 200%;
+	background-attachment: scroll;
+	color: ghostwhite;
+    margin: 10px;
+
+}
+
+body#modif2
+{
+	background: rgba(0, 0, 0, 0.5) url(menu5.jpg);
+    height: 100%;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+	font-size: x-large;
+	line-height: 200%;
+	background-attachment: fixed;
+	color: ghostwhite;
+}
+
+body#modif3
+{
+	background: rgba(0, 0, 0, 0.5) url(contact.jpg);
+    height: 100%;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+	font-size: x-large;
+	line-height: 200%;
+	background-attachment: scroll;
+	color: ghostwhite;
+}
