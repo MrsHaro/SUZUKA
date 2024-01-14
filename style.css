@@ -12,18 +12,33 @@
 
 /* l'acceuil */
 body.modif1 {
-    background-color: rgb(248, 221, 179);
+    background-image: url(image/téléchargement.jpeg);
+    /* background-color: rgb(248, 221, 179); */
     animation: fadeIn 0.5s ease-in-out;
 }
 
+.presentation {
+    display: flex;
+}
+
 p.pacc {
-    margin: auto;
     width: 50%;
     position: relative;
-    top: 250px;
+    left: 200px;
+    top: 200px;
     font-size: 25px;
     text-align: center;
     line-height: 35px;
+}
+.ppacc{
+    position: relative;
+    top: 110px;
+    left: 270px;
+
+}
+.ppacc img{
+    height: 300px;
+    border-radius: 10px;
 }
 
 section.bdp {
