@@ -30,13 +30,15 @@ p.pacc {
     text-align: center;
     line-height: 35px;
 }
-.ppacc{
+
+.ppacc {
     position: relative;
     top: 110px;
     left: 270px;
 
 }
-.ppacc img{
+
+.ppacc img {
     height: 300px;
     border-radius: 10px;
 }
@@ -88,6 +90,26 @@ footer.fin2 {
     font-variant: small-caps;
 }
 
+@media screen and (max-width: 920px) {
+    body.modif1 {
+        font-size: 16px;
+    }
+
+    section.bdp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .ppacc img {
+        height: 0px;
+    }
+
+}
 
 /* le contact */
 
@@ -230,6 +252,19 @@ form .btnfin button:hover {
 @media screen and (max-width: 920px) {
     form .formulaire .droite {
         margin-left: 0px;
+    }
+
+    div.lienac::before {
+        content: "";
+        position: absolute;
+        background: rgb(196, 0, 0);
+        width: 26.7%;
+        height: 3px;
+        bottom: 93%;
+        transform-origin: 100% 0;
+        transform: scaleX(0);
+        transition: transform 0.4s;
+        left: 3.7%;
     }
 }
 
@@ -405,6 +440,30 @@ hr {
     margin: 20px 0;
 }
 
+@media screen and (max-width: 920px) {
+    p.arthur button {
+        margin-right: 0px;
+    }
+
+    p.arthur button:hover {
+        background-color: rgb(248, 221, 179);
+        border: none;
+    }
+
+    p.arthur a {
+        position: relative;
+        left: -50%;
+        width: 100%;
+        padding: auto;
+    }
+
+    p.arthur a:hover {
+        color: rgb(196, 0, 0);
+    }
+    footer.arthur {
+        padding-left: 200px;
+    }
+}
 
 /* les comp */
 body.modif7 {
@@ -449,4 +508,35 @@ h3.arthur2 {
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 920px) {
+    div.lienac1::before {
+        content: "";
+        position: absolute;
+        background: rgb(196, 0, 0);
+        width: 27.5%;
+        height: 3px;
+        bottom: 93%;
+        transform-origin: 100% 0;
+        transform: scaleX(0);
+        transition: transform 0.4s;
+        left: 6.3%;
+    }
+
+    div.arthur2 {
+        padding-right: 70px;
+        margin-left: 22%;
+    }
+
+    .contenu {
+        padding: 10px;
+    }
+
+    .contenu p {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 30px;
+        width: 110%;
+    }
 }
